@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio – Desenvolvedor Front‑end</title>
+  <meta name="description" content="Apresentação pessoal, portfólio e contato." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <span class="brand brand--hidden" aria-hidden="true"></span>
+      <nav aria-label="principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topo">
+    <section class="hero container">
+      <div class="hero__left">
+        <p class="name-accent">Luís Eduardo</p>
+        <h1>Desenvolvedor Front‑end</h1>
+        <p class="lead">Crio interfaces rápidas, acessíveis e organizadas usando HTML, CSS e JavaScript. Aberto a freelas e novas oportunidades.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="https://github.com/LU1SED" target="_blank" rel="noopener">Ver projetos</a>
+        </div>
+      </div>
+      <div class="hero__right">
+        <img class="avatar" src="img/perfil.jpg" alt="Foto de Luís Eduardo" />
+      </div>
+    </section>
+
+    <section id="sobre" class="container section">
+      <h2>Sobre mim</h2>
+      <p>Oi, eu sou o Luis Eduardo, tenho 23 anos e sou apaixonado por transformar ideias em experiências digitais. Atualmente curso Engenharia de Software e me especializo em Front-End, com foco em HTML, CSS e JavaScript.
+
+Como desenvolvedor em início de carreira, busco entregar interfaces modernas, responsivas e intuitivas, sempre priorizando a semântica, a usabilidade e a performance. Já desenvolvi projetos que envolvem desde a criação de layouts limpos e organizados até integrações simples com APIs e WhatsApp, e sigo aprimorando minhas habilidades a cada desafio.</p>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2>Skills</h2>
+      <ul class="chips">
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>API e integrções</li>
+        <li>Acessibilidade</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+<section id="projetos" class="container section">
+  <h2>Projetos</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Meu Projeto</h3>
+      <img src="img/Projeto.png" alt="Projeto" style="width:100%; border-radius:10px; margin-bottom:10px;">
+      <p>Descrição curta do projeto. Tecnologias usadas: HTML, CSS, JavaScript.</p>
+      <div class="card__actions">
+        <a class="btn" href="https://github.com/LU1SED/Starbucks" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+    <section id="contato" class="container section">
+      <h2>Contato</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Fale comigo</h3>
+          <p>Respondo rápido. Escolha o canal abaixo:</p>
+          <div class="card__actions">
+            <a class="btn btn--primary" href="https://wa.me/5562996992162" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn" href="https://www.linkedin.com/in/luisedgs/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Luís Eduardo</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+<script src="script.js"></script>
